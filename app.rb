@@ -7,12 +7,11 @@ class ChitterApp < Sinatra::Base
   end
 
   get '/chitter' do
-    peeps = ["post 1",
+    @peeps = ["post 1",
               "post 2",
-            "post 3"
+              "post 3"
           ]
-
-          peeps.join
+        erb :index
    end
 
   run! if app_file == $0
