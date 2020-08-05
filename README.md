@@ -74,3 +74,6 @@ SimpleCov.start
 ```
 
 You can see your test coverage when you run your tests. If you want this in a graphical form, uncomment the `HTMLFormatter` line and see what happens!
+
+# MVC
+[![Image from Gyazo](https://i.gyazo.com/084b7c79fc510c10ab865a7b12b582c9.png)](https://gyazo.com/084b7c79fc510c10ab865a7b12b582c9)

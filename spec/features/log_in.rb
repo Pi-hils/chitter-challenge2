@@ -10,4 +10,6 @@ feature 'log in' do
     click_button 'Sign In'
     expect(page).to have_content('User was successfully created')
    end
+
+
   end
