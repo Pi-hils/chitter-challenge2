@@ -7,10 +7,7 @@ class ChitterApp < Sinatra::Base
   end
 
   get '/chitter' do
-    @peeps = ["post 1",
-              "post 2",
-              "post 3"
-          ]
+    @peeps = PeepPost.all
         erb :index
    end
 
