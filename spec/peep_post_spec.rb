@@ -1,6 +1,7 @@
 require 'spec_helper'
 require 'peep_post'
 
+
 describe PeepPost do
 
   describe '.all' do

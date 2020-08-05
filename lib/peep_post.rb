@@ -1,10 +1,9 @@
+require 'pg'
+
 class PeepPost
 
   def self.all
-    [
-      'post 1',
-      'post 2',
-       'post 3'
-    ]
+    connection = PG.connect(dbname: 'chitter')
+    result = connection.exec('SELECT * FROM peeps;').map { |peep| peep['url']}
   end
 end
