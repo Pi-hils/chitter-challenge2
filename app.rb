@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/peep_post'
 
 class ChitterApp < Sinatra::Base
   
@@ -6,7 +7,12 @@ class ChitterApp < Sinatra::Base
     "Welcome to Chitter"
   end
 
-  get '/chitter' do
+  post '/' do
+    erb :peep
+    redirect '/peep'
+  end
+
+  get '/peep' do
     @peeps = PeepPost.all
         erb :index
    end
